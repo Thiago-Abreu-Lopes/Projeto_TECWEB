@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.inicio{
+    display:flex;
+    background-color:black;
+    justify-content: space-around;
+    height: 132px;
+    width: 100%;
+}
+.logoi{
+    width: 100px;
+    height: 100px;
+
+}
+.div_logoi{
+    padding-top: 20px;
+
+}
+.menu{
+    color: white;
+    align-self: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.busca{
+    align-self: center;
+    text-decoration: none;
+}
+#busca{
+    background: transparent;
+    border-radius: 20px;
+    border-color: #F5C518;
+    width: 200px;
+    color: white;
+    height: 35px;
+    display: flex;
+    background: url(/imagens/lupa-de-detetive.png) no-repeat ;
+    background-position: 5%;
+    padding-left: 30px;
+
+}
+.fim{
+    display:flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    background-color:#121212;
+    justify-content: space-around;
+    height: 132px;
+    width: 100%;
+    justify-content: flex-end;
+}
+.div_logof{
+    padding-top: 20px;
+    padding-right: 20px;
+}
