@@ -2,9 +2,12 @@
     margin:0;
     padding: 0;
 }
+body{
+    background-color: black;
+}
+
 .inicio{
     display:flex;
-    background-color:black;
     justify-content: space-around;
     height: 132px;
     width: 100%;
@@ -60,3 +63,48 @@ a{
     padding-top: 20px;
     padding-right: 20px;
 }
+
+/* Espaço 7 */
+.espaco_7 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 130px;
+  }
+  #titulo-espaco_7{
+    color: #F5C518;
+    margin-bottom: 10px;
+  }
+  .espaco_7 p{
+    color: white;
+    font-size: 16px;
+  }
+  .espaco_7 button{
+    background-color: #F5C518;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100%;
+    width: 195px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .espaco_7 input, textarea{
+    background-color: black;
+    border: #F5C518 solid;
+  }
+  .espaco_7 input{
+    width: 240px;
+    height: 30px;
+    color: white;
+  }
+  .espaco_7 textarea{
+    width: 515px;
+    height: 183px;
+    color: white;
+  }
+
+  .espaco_7 h2{
+    font-size: 48px;
+    margin-left: 100px;
+  }
