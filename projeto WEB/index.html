@@ -2,178 +2,250 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação de Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliação de Filmes</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="inicio">
-            <div class="div_logoi">
-                <img src="/imagens/logo.png" class=logoi>
-            </div>
-            <nav class="menu">
-                <a href="url">Lançamentos |</a>
-                <a href="url">Em destaque |</a>
-                <a href="url">Avaliações |</a>
-                <a href="url">Entrevistas&makingof |</a>
-                <a href="url">Novidades </a>
-            </nav>
-            <div class="busca">
-                <input type="search" id="busca" name="q">
+  <header class="cabecalho">
+    <div class="inicio">
+      <div class="div_logoi">
+        <img src="../imagens/logo.png" class="logoi" />
+      </div>
+      <nav class="menu">
+        <a href="url">Lançamentos</a>
+        <a href="url">Em destaque</a>
+        <a href="url">Avaliações</a>
+        <a href="url">Entrevistas & Makingof</a>
+        <a href="url">Novidades</a>
+      </nav>
+      <div class="busca">
+        <input type="search" id="busca" name="q" />
+      </div>
+    </div>
+  </header>
+  <main class="bloco_principal">
 
-            </div>
+    <div class="lancamento">
+      <h1 class="titulo1 lanca">Lançamentos</h1>
+      <div class="container">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_uX6of3vBu0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-    </header>
-    <main class="bloco_principal">
-        <div class="lancamento">
-
+        <div>
+          <h1>Órfã 2: A origem</h1>
+          <p>
+            <b>Sinopse:</b> A aterradora saga de Esther continua nesta
+            emocionante prequela, Órfã. Depois de planear uma brilhante fuga
+            de um hospital psiquiátrico na Estónia, Esther viaja até a América
+            passando-se pela filha desaparecida de uma família milionária. No
+            entanto, após uma inesperada reviravolta, a mãe começa a
+            desconfiar da "criança" assassina, e tudo faz para proteger a sua
+            família.
+          </p>
+          <br />
+          <p>
+            <b>Diretor:</b> William Brent Bell <span class="tab"></span><b>Roteiro:</b> David Coggeshall <span
+              class="tab"></span><b>Estreia:</b> 2022
+          </p>
+          <br />
+          <p><b>Elenco:</b></p>
+          <p>
+            Isabelle Fuhrman | Julia Stiles | Matthew Finlan | Rossif
+            Sutherland
+          </p>
+          <br />
+          <p><b>Avaliações:</b></p>
+          <img class="img_estrelas" src="/imagens/estrelas.png" />
         </div>
-        <div class="emDestaque">
-            <header>
-                <h1 class="titulo1">Em destaque</h1>
-                <div>
-                    <select class="seletor" name="Gênero">
-                        <option value="Comédia">Comédia</option>
-                        <option value="Romance" selected>Romance</option>
-                        <option value="Drama">Drama</option>
-                    </select>
-                </div>
-            </header>
-            <div class="conteudoDestaque">
-                <article class="filmeDestaque">
-                    <img src="/imagens/DC-Liga-dos-Superpets.jpg" alt="DC pets">
-                </article>
-                <article class="filmeDestaque">
-                    <img src="/imagens/5585620.jpg" alt="Samaritan">
-                </article>
-                <article class="filmeDestaque">
-                    <img src="/imagens/desrtaque3.webp" alt="Miranha">
-                </article>
-                <article class="filmeDestaque">
-                    <img src="/imagens/filme_7373.jpg" alt="vingadores">
-                </article>
-            </div>
-            <footer>
-                <input type="submit" value="Aleatório">
-            </footer>
+        <div id="posic_bolas">
+          <div id="bolas">
+            <div class="bola-laranja"></div>
+            <div class="bola-laranja"></div>
+            <div class="bola-laranja"></div>
+            <div class="bola-branca"></div>
+          </div>
         </div>
-        <div class="ultimasAvaliacoes">
-
+        <br />
+      </div>
+    </div>
+    <div class="emDestaque">
+      <header>
+        <h1 class="titulo1">Em destaque</h1>
+        <div>
+          <select class="seletor" name="Gênero">
+            <option value="Comédia">Comédia</option>
+            <option value="Romance" selected>Romance</option>
+            <option value="Drama">Drama</option>
+          </select>
         </div>
-        <div class="makingOf">
-            <header>
-                <h1 class="titulo1">Entrevista & Making Of</h1>
-            </header>
-            <div class="conteudoMakingOf">
-                <article class="videoDestaque">
-                    <iframe src="https://www.youtube.com/embed/K4s5ceLficQ"></iframe>
-                </article>
-                <article class="videoDestaque">
-                    <iframe src="https://www.youtube.com/embed/lnHX3eg2oxI"></iframe>
-                </article>
-                <article class="videoDestaque">
-                    <iframe src="https://www.youtube.com/embed/cLVNJ50vCDI"></iframe>
-                </article>
-            </div>
-            <footer>
-                <input type="submit" value="Aleatório">
-            </footer>
+      </header>
+      <div class="conteudoDestaque">
+        <article class="filmeDestaque">
+          <img src="/imagens/DC-Liga-dos-Superpets.jpg" alt="DC pets">
+        </article>
+        <article class="filmeDestaque">
+          <img src="/imagens/5585620.jpg" alt="Samaritan">
+        </article>
+        <article class="filmeDestaque">
+          <img src="/imagens/desrtaque3.webp" alt="Miranha">
+        </article>
+        <article class="filmeDestaque">
+          <img src="/imagens/filme_7373.jpg" alt="vingadores">
+        </article>
+      </div>
+      <footer>
+        <input class="hov" type="submit" value="Aleatório">
+      </footer>
+    </div>
+    <div class="ultimasAvaliacoes">
+
+    </div>
+    <div class="makingOf">
+      <header>
+        <h1 class="titulo1">Entrevista & Making Of</h1>
+      </header>
+      <div class="conteudoMakingOf">
+        <article class="videoDestaque">
+          <iframe src="https://www.youtube.com/embed/K4s5ceLficQ"></iframe>
+        </article>
+        <article class="videoDestaque">
+          <iframe src="https://www.youtube.com/embed/lnHX3eg2oxI"></iframe>
+        </article>
+        <article class="videoDestaque">
+          <iframe src="https://www.youtube.com/embed/cLVNJ50vCDI"></iframe>
+        </article>
+      </div>
+      <footer>
+        <input class="hov" type="submit" value="Aleatório">
+      </footer>
+    </div>
+    <div class="espaco_1">
+
+    </div>
+    <div class="espaco_2">
+      <header>
+        <h1 class="titulo1">Meus Favoritos</h1>
+      </header>
+      <div class="favoritos">
+        <div class="adicionar">
+          <span class="plus hov2">+</span>
+          <span class="textadd">ADICIONAR</span>
         </div>
-        <div class="espaco_1">
-
+        <div class="classificar">
+          <div class="filmesFav">
+            <article class="favmovie">
+              <img src="/imagens/e7ec37e6fc39b06ca2ef5633a70ccb02.jpg" alt="joao fraco">
+            </article>
+            <article class="favmovie">
+              <img src="/imagens/0687805.jpg" alt="Fiño Senhores">
+            </article>
+            <article class="favmovie">
+              <img src="/imagens/ataque_destaque1.jpg" alt="psicose">
+            </article>
+            <article class="favmovie">
+              <img src="/imagens/A_FERA.jpg" alt="Jo soares??">
+            </article>
+          </div>
+          <div class="botaoFav">
+            <span class="hov2">❤</span>
+          </div>
         </div>
-        <div class="espaco_2">
-            <header>
-                <h1 class="titulo1">Meus Favoritos</h1>
-            </header>
-            <div class="favoritos">
-                <div class="adicionar">
-                    <span class="plus">+</span>
-                    <span class="textadd">ADICIONAR</span>
-                </div>
-                <div class="classificar">
-                    <div class="filmesFav">
-                        <article class="favmovie">
-                            <img src="/imagens/e7ec37e6fc39b06ca2ef5633a70ccb02.jpg" alt="joao fraco">
-                        </article>
-                        <article class="favmovie">
-                            <img src="/imagens/0687805.jpg" alt="Fiño Senhores">
-                        </article>
-                        <article class="favmovie">
-                            <img src="/imagens/ataque_destaque1.jpg" alt="psicose">
-                        </article>
-                        <article class="favmovie">
-                            <img src="/imagens/A_FERA.jpg" alt="Jo soares??">
-                        </article>
-                    </div>
-                    <div class="botaoFav">
-                        <span>❤</span>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="espaco_3">
+
+    </div>
+    <div class="espaco_4">
+
+    </div>
+    <div class="espaco_5">
+      <header>
+        <h1>Sobre o filme: Duna</h1>
+      </header>
+      <div class="discussao">
+        <article class="opiniao">
+          <p>Bacaninha</p>
+          <span>Zezin123</span>
+        </article>
+        <article class="opiniao">
+          <p>Areia demais, achei desnecessário</p>
+          <span>Sabio654</span>
+        </article>
+        <article class="opiniao">
+          <p>Cade a parte 2!!!!</p>
+          <span>ceciliacilia</span>
+        </article>
+        <article class="opiniao">
+          <p>Era melhor ter ido ver o filme do Pelé</p>
+          <span>chavo8</span>
+        </article>
+        <article class="opiniao">
+          <p>Não posso opinar</p>
+          <span>gloria_pires</span>
+        </article>
+      </div>
+      <footer>
+        <input class="hov" type="submit" value="Participe da Discussão">
+      </footer>
+    </div>
+
+    <div class="espaco_6"></div>
+
+    <div class="espaco_7">
+      <h1 class="titulo1 lanca">Cadastro de informações</h1>
+      <div class="container">
+        <div>
+          <form action="">
+            <strong>
+              <p>Nome</p>
+            </strong>
+            <input type="text" name="nome" id="nome" required />
+            <strong>
+              <p>Email</p>
+            </strong>
+            <input type="email" name="email" id="email" required />
+            <strong>
+              <p>Data Nascimento</p>
+            </strong>
+            <input type="date" name="data" id="data" required />
+            <strong>
+              <p>Título</p>
+            </strong>
+            <input type="text" name="titulo" id="titulo" required />
+            <strong>
+              <p>Envio de imagem</p>
+            </strong>
+            <input type="image" name="imagem" id="imagem" required />
+          </form>
         </div>
-        <div class="espaco_3">
 
+        <div>
+          <strong>
+            <p>Digite sua opinião</p>
+          </strong>
+          <textarea cols="30" rows="10" name="opiniao" id="opiniao">Opinião</textarea>
         </div>
-        <div class="espaco_4">
 
+        <div class="Enviarbotao">
+          <button class="hov">Enviar</button>
         </div>
-        <div class="espaco_5">
-            <header>
-                <h1>Sobre o filme: Duna</h1>
-            </header>
-            <div class="discussao">
-                <article class="opiniao">
-                    <p>Bacaninha</p>
-                    <span>Zezin123</span>
-                </article>
-                <article class="opiniao">
-                    <p>Areia demais, achei desnecessário</p>
-                    <span>Sabio654</span>
-                </article>
-                <article class="opiniao">
-                    <p>Cade a parte 2!!!!</p>
-                    <span>ceciliacilia</span>
-                </article>
-                <article class="opiniao">
-                    <p>Era melhor ter ido ver o filme do Pelé</p>
-                    <span>chavo8</span>
-                </article>
-                <article class="opiniao">
-                    <p>Não posso opinar</p>
-                    <span>gloria_pires</span>
-                </article>
-            </div>
-            <footer>
-                <input type="submit" value="Participe da Discussão">
-            </footer>
-        </div>
-        <div class="espaco_6">
+      </div>
+    </div>
+  </main>
 
-        </div>
-        <div class="espaco_7">
-
-        </div>
-    </main>
-
-
-
-
-
-
-
-
-    <footer class="rodape">
-        <div class="fim">
-            <div class="div_logof">
-                <img src="/imagens/logo.png" class=logoi>
-            </div>
-        </div>
-    </footer>
+  <div class="fim">
+    <div class="div_logof">
+      <img src="/imagens/logo.png" class="logoi" />
+    </div>
+  </div>
+  </footer>
 </body>
 
 </html>
