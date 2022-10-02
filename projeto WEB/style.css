@@ -1,62 +1,413 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-.inicio{
-    display:flex;
-    background-color:black;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    --amarelo-padrao: #F5C518;
+    --text-padrao: azure;
+    --bg-color: #121212;
+    background-color: var(--bg-color);
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: blue;
+}
+
+.inicio {
+    display: flex;
+    background-color: black;
     justify-content: space-around;
     height: 132px;
     width: 100%;
 }
-.logoi{
+
+.logoi {
     width: 100px;
     height: 100px;
 
 }
-.div_logoi{
+
+.div_logoi {
     padding-top: 20px;
 
 }
-.menu{
-    color: white;
+
+.menu {
+    color: var(--text-padrao);
     align-self: center;
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color: white;
+    color: var(--text-padrao);
 
 }
-.busca{
+
+.busca {
     align-self: center;
     text-decoration: none;
 }
-#busca{
+
+#busca {
     background: transparent;
     border-radius: 20px;
-    border-color: #F5C518;
+    border-color: var(--amarelo-padrao);
     width: 200px;
-    color: white;
+    color: var(--text-padrao);
     height: 35px;
     display: flex;
-    background: url(/imagens/lupa-de-detetive.png) no-repeat ;
+    background: url(/imagens/lupa-de-detetive.png) no-repeat;
     background-position: 5%;
     padding-left: 30px;
 
 }
-.fim{
-    display:flex;
-    position: absolute;
+
+
+.fim {
+    display: flex;
+    position: relative;
     bottom: 0;
     flex-direction: row;
-    background-color:#121212;
+    background-color: black;
     justify-content: space-around;
     height: 132px;
     width: 100%;
     justify-content: flex-end;
 }
-.div_logof{
+
+.div_logof {
     padding-top: 20px;
     padding-right: 20px;
 }
+
+/*PARTE THIAGO*/
+/*EM DESTAQUE*/
+.emDestaque {
+    padding-bottom: 10px;
+}
+
+.emDestaque header {
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 50px 0px 50px;
+
+}
+
+.titulo1 {
+    color: var(--amarelo-padrao);
+}
+
+.seletor {
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--text-padrao);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+option {
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--text-padrao);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.conteudoDestaque {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.filmeDestaque {
+    cursor: pointer;
+    width: 20%;
+    align-content: stretch;
+}
+
+.filmeDestaque img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.emDestaque footer {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.emDestaque footer input {
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--text-padrao);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 50px;
+   
+}
+
+/*Making OF*/
+.makingOf {
+    margin-bottom: 10px;
+}
+
+.makingOf header{
+    height: 20vh;
+    margin-left: 50px;
+
+}
+
+.conteudoMakingOf {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    /*gap:10px;*/
+    justify-content: space-around;
+
+}
+
+.makingOf footer {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.makingOf footer input {
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--text-padrao);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.videoDestaque {
+    cursor: pointer;
+    width: 25%;
+    align-content: stretch;
+}
+
+.videoDestaque iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+/*SEGUNDA PARTE*/
+.espaco_2 {
+    margin-bottom: 10px;
+}
+
+.espaco_2 header {
+    height: 20vh;
+    margin-left: 50px;
+}
+
+.favoritos {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.adicionar {
+    cursor: pointer;
+    width: 20%;
+    border: 2px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus {
+    padding: 5px 20px 5px 20px;
+    font-size: xx-large;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+    color: var(--amarelo-padrao);
+    font-weight: 700;
+}
+
+.textadd {
+    padding: 10px;
+    color: var(--amarelo-padrao);
+    font-weight: 700;
+
+}
+
+.filmesFav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.favmovie {
+    width: auto;
+    height: 40%;
+
+}
+
+.favmovie img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.classificar {
+    display: flex;
+    width: 70%;
+    border: 2px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+
+
+}
+
+.botaoFav {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.botaoFav span {
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 10px;
+    font-size: large;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+    color: var(--amarelo-padrao);
+    font-weight: 700;
+
+}
+
+/*QUINTA PARTE*/
+.espaco_5 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.espaco_5 header {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.espaco_5 header h1 {
+    padding: 5px 60px 5px 60px;
+    color: var(--amarelo-padrao);
+    border: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+
+}
+
+.discussao {
+    height: 60vh;
+    width: 80%;
+}
+
+.discussao article {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    color: var(--bg-color);
+    border: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
+    background-color: var(--amarelo-padrao);
+}
+
+.discussao article p {
+    align-self: center;
+    margin: 2px;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.discussao article span {
+    margin: 5px;
+    font-size: small;
+    align-self: flex-end;
+}
+
+.espaco_5 footer {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.espaco_5 footer input {
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--text-padrao);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+/*FIM PARTE THIAGO*/
