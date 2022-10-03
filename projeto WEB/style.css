@@ -514,10 +514,12 @@ option {
     float: left;
 }
 
-.avaliador1Nome{
-    font: 20px;
+.avaliadorNome{
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
     color: var(--amarelo-padrao);
 }
+
 
 /* Concluído  */
 
