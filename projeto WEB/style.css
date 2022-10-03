@@ -161,7 +161,7 @@ option {
     border-radius: 10px;
 }
 
-.emDestaque footer {
+.emDestaque footer, .botaoUA-Wrapper {
     display: flex;
     width: 100%;
     height: 20vh;
@@ -169,7 +169,7 @@ option {
     justify-content: flex-end;
 }
 
-.emDestaque footer input {
+.emDestaque footer input, .botaoUA {
     cursor: pointer;
     width: 200px;
     height: 30px;
@@ -512,6 +512,8 @@ option {
 
 .fotoUserIcon{
     float: left;
+    clear: both;
+    margin-bottom: 100px;
 }
 
 .avaliadorNome{
@@ -525,15 +527,22 @@ option {
 }
 
 .imgEstrelasUltimasAvaliacoes{
-    margin: 5px 0px 5px 58px;
+    margin: 5px 0px 5px 0px;
     float: left;
     height: 30px;
 
 }
 
 .linhaEstrela{
-    display: grid;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.data{
+    font-size: 20px;
 }
 
 
