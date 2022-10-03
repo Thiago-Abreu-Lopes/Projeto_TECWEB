@@ -425,12 +425,19 @@ option {
 }
 /*FIM PARTE THIAGO*/
 
-/* Espaço 1 */
-
+/* PARTE LUAN */
+/* Lançamentos */
 .lancamento .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 50px 0px 50px;
+}
+
+.titulo-h1 {
+    margin-left: 50px;
+    color: var(--amarelo-padrao);
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .lancamento .container h1 {
@@ -484,7 +491,45 @@ option {
     margin-bottom: 20px;
 }
 
-/* Espaço 7 */
+/* QUARTA PARTE */
+.espaco_4 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 50px 0px 50px;
+}
+
+.img-espaco4{
+    width: 200px;
+    height: 200px;
+    margin: 5px 5px 5px 5px;
+}
+
+.espaco_4 .container h1 {
+    color: var(--amarelo-padrao);
+    font-size: 15px;
+}
+
+.espaco_4 .container p {
+    color: var(--text-padrao);
+    text-align: justify;
+}
+
+.novidades{
+    display: flex;
+}
+
+.img-espaco4-prop{
+    border-radius: 10%;
+}
+
+#espaco4-prop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SÉTIMA PARTE */
 .espaco_7 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -541,13 +586,7 @@ textarea {
     color: var(--text-padrao);
 }
 
-.lanca {
-    margin-left: 50px;
-    color: var(--amarelo-padrao);
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
 input:focus,textarea:focus {
     outline: none;
 }
+/* FIM PARTE LUAN */
