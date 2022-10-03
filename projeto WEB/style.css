@@ -9,6 +9,7 @@ body {
     --amarelo-padrao: #F5C518;
     --text-padrao: azure;
     --bg-color: #121212;
+    --sec-black: rgb(36, 36, 36);
     background-color: var(--bg-color);
 }
 
@@ -45,7 +46,7 @@ body {
     text-decoration: none;
 }
 
-a {
+.cabecalho a {
     padding: 10px;
     text-decoration: none;
     color: var(--amarelo-padrao);
@@ -53,7 +54,7 @@ a {
     font-weight: 700;
 }
 
-a:hover {
+.cabecalho a:hover {
     background-color: var(--amarelo-padrao);
     color: var(--bg-color);
     border-radius: 20px;
@@ -122,7 +123,7 @@ a:hover {
     border: 0px;
     background-color: var(--amarelo-padrao);
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -134,7 +135,7 @@ option {
     border: 0px;
     background-color: var(--amarelo-padrao);
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -177,12 +178,25 @@ option {
     border: 0px;
     background-color: var(--amarelo-padrao);
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 50px;
 
+}
+
+.btnPadrao {
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /*Making OF*/
@@ -220,7 +234,7 @@ option {
     border: 0px;
     background-color: var(--amarelo-padrao);
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -393,6 +407,7 @@ option {
     border: 2px;
     border-radius: 15px;
     border-style: solid;
+    background-color: var(--sec-black);
     border-color: var(--amarelo-padrao);
 
 }
@@ -442,7 +457,7 @@ option {
     border: 0px;
     background-color: var(--amarelo-padrao);
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -532,14 +547,18 @@ option {
 
 .conteudoUltimasAvaliacoes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0px 50px 0px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 50px 20px 50px;
+    gap: 10px;
 }
 
 .avaliacao1,
 .avaliacao2,
 .avaliacao3 {
     color: white;
+    background-color: var(--sec-black);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .fotoUserIcon {
@@ -565,12 +584,32 @@ option {
 .img-espaco4 {
     width: 200px;
     height: 200px;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .espaco_4 .container h1 {
     color: var(--amarelo-padrao);
     font-size: 15px;
+}
+
+.titleNOV {
+    text-decoration: none;
+}
+
+.titleNOV h1 {
+    padding: 10px;
+
+    color: var(--amarelo-padrao);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.titleNOV h1:hover {
+    background-color: var(--amarelo-padrao);
+    color: var(--bg-color);
+    border-radius: 20px;
+
 }
 
 .espaco_4 .container p {
@@ -622,7 +661,7 @@ option {
 
 .hov:hover {
     background-color: var(--text-padrao);
-    color: var(--amarelo-padrao);
+    color: var(--sec-black);
 }
 
 .hov2:hover {
