@@ -72,7 +72,7 @@ a:hover{
     color: var(--text-padrao);
     height: 35px;
     display: flex;
-    background: url(/imagens/lupa-de-detetive.png) no-repeat;
+    background: url(./imagens/lupa-de-detetive.png) no-repeat;
     background-position: 5%;
     padding-left: 30px;
 
