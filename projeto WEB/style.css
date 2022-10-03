@@ -52,7 +52,8 @@ a {
     text-transform: uppercase;
     font-weight: 700;
 }
-a:hover{
+
+a:hover {
     background-color: var(--amarelo-padrao);
     color: var(--bg-color);
     border-radius: 20px;
@@ -227,17 +228,44 @@ option {
 }
 
 .videoDestaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     width: 25%;
-    align-content: stretch;
+    align-content: center;
+    background-color: var(--amarelo-padrao);
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .videoDestaque iframe {
     max-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 70%;
 
     border-radius: 10px;
+}
+
+.MKFTxtPrincipal {
+    margin: 10px 0px 10px 0px;
+}
+
+.MKFTxtPrincipal,
+.MKFTxtSecundario {
+    color: var(--bg-color);
+    text-align: center;
+    display: block;
+}
+
+.MKFTxtSecundario {
+    font-size: 12px;
+}
+
+.MKFTxtPrincipal span,
+.MKFTxtSecundario span {
+    font-weight: 700;
 }
 
 /*SEGUNDA PARTE*/
@@ -420,9 +448,11 @@ option {
     text-transform: uppercase;
     margin-right: 50px;
 }
-.opiniao p{
+
+.opiniao p {
     text-align: center;
 }
+
 /*FIM PARTE THIAGO*/
 
 /* PARTE LUAN */
@@ -500,21 +530,23 @@ option {
     margin-top: 30px;
 }
 
-.conteudoUltimasAvaliacoes{
+.conteudoUltimasAvaliacoes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0px 50px 0px 50px;
 }
 
-.avaliacao1, .avaliacao2, .avaliacao3{
+.avaliacao1,
+.avaliacao2,
+.avaliacao3 {
     color: white;
 }
 
-.fotoUserIcon{
+.fotoUserIcon {
     float: left;
 }
 
-.avaliadorNome{
+.avaliadorNome {
     font-weight: bold;
     margin: 10px 0px 10px 0px;
     color: var(--amarelo-padrao);
@@ -530,7 +562,7 @@ option {
     margin: 0px 50px 0px 50px;
 }
 
-.img-espaco4{
+.img-espaco4 {
     width: 200px;
     height: 200px;
     margin: 5px 5px 5px 5px;
@@ -546,15 +578,15 @@ option {
     text-align: justify;
 }
 
-.novidades{
+.novidades {
     display: flex;
 }
 
-.img-espaco4-prop{
+.img-espaco4-prop {
     border-radius: 10%;
 }
 
-#espaco4-prop{
+#espaco4-prop {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -592,6 +624,7 @@ option {
     background-color: var(--text-padrao);
     color: var(--amarelo-padrao);
 }
+
 .hov2:hover {
     background-color: var(--amarelo-padrao);
     color: var(--bg-color);
@@ -618,7 +651,9 @@ textarea {
     color: var(--text-padrao);
 }
 
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
+
 /* FIM PARTE LUAN */
