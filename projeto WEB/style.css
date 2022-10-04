@@ -555,6 +555,10 @@ option {
     margin-bottom: 20px;
 }
 
+.avaliadorTexto::first-letter{
+    font: bold;
+}
+
 /* TERCEIRA PARTE LUCAS*/
 
 .titulo-ultimasAvaliacoes {
