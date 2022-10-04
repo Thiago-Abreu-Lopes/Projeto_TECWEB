@@ -23,7 +23,6 @@ body {
     background-color: black;
     justify-content: space-around;
     height: 132px;
-    width: 100%;
 }
 
 .logoi {
@@ -38,6 +37,16 @@ body {
 }
 
 .menu {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    text-decoration: none;
+    text-decoration: none;
+
+}
+
+.nav {
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -46,7 +55,15 @@ body {
     text-decoration: none;
 }
 
-.cabecalho a {
+.label-menu {
+    display: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+a {
     padding: 10px;
     text-decoration: none;
     color: var(--amarelo-padrao);
@@ -74,7 +91,7 @@ body {
     color: var(--text-padrao);
     height: 35px;
     display: flex;
-    background: url(/imagens/lupa-de-detetive.png) no-repeat;
+    background: url(./imagens/lupa-de-detetive.png) no-repeat;
     background-position: 5%;
     padding-left: 30px;
 
@@ -163,7 +180,8 @@ option {
     border-radius: 10px;
 }
 
-.emDestaque footer {
+.emDestaque footer,
+.botaoUA-Wrapper {
     display: flex;
     width: 100%;
     height: 20vh;
@@ -171,7 +189,8 @@ option {
     justify-content: flex-end;
 }
 
-.emDestaque footer input {
+.emDestaque footer input,
+.botaoUA {
     cursor: pointer;
     width: 200px;
     height: 30px;
@@ -547,8 +566,8 @@ option {
 
 .conteudoUltimasAvaliacoes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0px 50px 20px 50px;
+    grid-auto-flow: column;
+    margin: 0px 50px 0px 50px;
     gap: 10px;
 }
 
@@ -563,6 +582,8 @@ option {
 
 .fotoUserIcon {
     float: left;
+    clear: both;
+    margin-bottom: 100px;
 }
 
 .avaliadorNome {
@@ -570,6 +591,32 @@ option {
     margin: 10px 0px 10px 0px;
     color: var(--amarelo-padrao);
 }
+
+.avaliadorTexto {
+    margin: 5px 0px 5px 0px;
+}
+
+.imgEstrelasUltimasAvaliacoes {
+    margin: 5px 0px 5px 0px;
+    float: left;
+    height: 30px;
+
+}
+
+.linhaEstrela {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.data {
+    color: var(--amarelo-padrao);
+    font-size: 20px;
+    font-weight: 700;
+}
+
 
 
 /* Concluído  */
@@ -656,7 +703,7 @@ option {
     font-size: 25px;
     font-weight: bold;
     border-radius: 10px;
-    color: var(--text-padrao);
+    color: var(--sec-black);
 }
 
 .hov:hover {
@@ -696,3 +743,93 @@ textarea:focus {
 }
 
 /* FIM PARTE LUAN */
+@media (max-width:600px) {
+    .menu {
+        background-color: var(--bg-color);
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+    }
+
+    .checkbox:checked~.menu {
+        display: block;
+    }
+
+    .label-menu {
+        color: var(--amarelo-padrao);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+
+    }
+
+    .hamburguer::after,
+    .hamburguer::before {
+        content: "";
+        display: block;
+        height: 0.125rem;
+        width: 1.25rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+    }
+
+    .logoi {
+        width: 50px;
+        height: 50px;
+        grid-column-start: 1;
+
+    }
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 75px;
+    }
+
+    .busca {
+        align-self: none;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #busca {
+        width: 200px;
+
+    }
+
+    .nav {
+        grid-column-start: 5;
+    }
+
+    .favmovie:nth-child(4),
+    .favmovie:nth-child(3) {
+        display: none;
+    }
+
+    .filmeDestaque:nth-child(4),
+    .filmeDestaque:nth-child(3) {
+        display: none;
+    }
+
+    .filmeDestaque {
+        width: auto;
+    }
+
+    .espaco_5 footer {
+        align-items: flex-end;
+    }
+
+}

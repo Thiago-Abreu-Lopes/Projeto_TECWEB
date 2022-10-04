@@ -15,12 +15,16 @@
       <div class="div_logoi">
         <img src="/imagens/logo.png" class="logoi" />
       </div>
-      <nav class="menu">
-        <a href="url">Lançamentos</a>
-        <a href="url">Em destaque</a>
-        <a href="url">Avaliações</a>
-        <a href="url">Entrevistas & Makingof</a>
-        <a href="url">Novidades</a>
+      <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu">Menu <span class="hamburguer"></span></label>
+        <ul class="menu">
+          <li><a href="">Lançamentos</a></li>
+          <li><a href="">Em destaque</a></li>
+          <li><a href="">Avaliações</a></li>
+          <li><a href="">Entrevistas & Makingof</a></li>
+          <li><a href="">Novidades</a></li>
+        </ul>
       </nav>
       <div class="busca">
         <input type="search" id="busca" name="q" />
@@ -105,33 +109,50 @@
       </footer>
     </div>
     <div class="ultimasAvaliacoes">
-      <header>
+      <div>
         <h1 class="titulo-ultimasAvaliacoes">Últimas Avaliações</h1>
-      </header>
+      </div>
       <!-- CONTAINER -->
       <div class="conteudoUltimasAvaliacoes">
         <div class="avaliacao1">
           <img class="fotoUserIcon" src="/imagens/userIconYellow.png" alt="foto de comentário.">
 
           <label for="avaliador1" class="avaliadorNome">Fischer Jonatas</label>
-          <p><b>Avaliação:</b> Muito bom, me lembrou a minha infância.<br>01/10/22</p>
-          <img class="img_estrelas" src="/imagens/estrelas.png" alt="" />
+          <p class="avaliadorTexto"><b>Avaliação:</b> A minha experiência com este filme foi muito interessante, lembrou
+            a minha infância, recomendo.</p>
 
+          <div class="linhaEstrela">
+            <img class="imgEstrelasUltimasAvaliacoes" src="/projeto WEB/imagens/estrelas.png" alt="" />
+            <span class="data">01/10/22</span>
+          </div>
         </div>
+
         <div class="avaliacao2">
           <img class="fotoUserIcon" src="/imagens/userIconYellow.png" alt="foto de comentário.">
           <label for="avaliador2" class="avaliadorNome">Jonatas Ferreira</label>
-          <p><b>Avaliação:</b> Show de bola, excelente para ver em um final de semana com a família.<br>27/09/22</p>
-          <img class="img_estrelas" src="/imagens/estrelas.png" alt="" />
+          <p class="avaliadorTexto"><b>Avaliação:</b> Show de bola excelente para ver em um final de semana com a
+            família.</p>
+          <div class="linhaEstrela">
+            <img class="imgEstrelasUltimasAvaliacoes" src="/projeto WEB/imagens/estrelas.png" alt="" />
+            <span class="data">01/10/22</span>
+          </div>
         </div>
+
         <div class="avaliacao3">
           <img class="fotoUserIcon" src="/imagens/userIconYellow.png" alt="foto de comentário.">
           <label for="avaliador3" class="avaliadorNome">Lucas Leite</label>
-          <p><b>Avaliação:</b> Este filme foi muito interessante, prende a audiência com maestria e não é
-            violento.<br>25/09/22</p>
-          <img class="img_estrelas" src="/imagens/estrelas.png" alt="" />
+          <p class="avaliadorTexto"><b>Avaliação:</b> Este filme foi muito interessante, prende a audiência com maestria
+            e não é violento.</p>
+          <div class="linhaEstrela">
+            <img class="imgEstrelasUltimasAvaliacoes" src="/projeto WEB/imagens/estrelas.png" alt="" />
+            <span class="data">01/10/22</span>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="botaoUA-Wrapper">
+      <input class="hov botaoUA" type="submit" value="Aleatório">
     </div>
     <div class="makingOf">
       <header>
