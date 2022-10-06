@@ -507,7 +507,10 @@ option {
 .lancamento .container h1 {
     color: var(--text-padrao);
 }
-
+.iframe_video{
+    width: 513px;
+    height: 356px;
+}
 .lancamento .container p {
     color: var(--text-padrao);
     text-align: justify;
@@ -813,7 +816,25 @@ textarea:focus {
     .nav {
         grid-column-start: 5;
     }
+   
+    .lancamento .container {
+        display: grid;
+        grid-template-columns:  1fr;
+        margin: 0px 50px 0px 50px;
+    }
+    .video_lanc{
+    }
+    .descri_lan{
+        align-self: flex-end;
+    }
+    #posic_bolas{
+        grid-row-start: 2;
 
+    }
+    .iframe_video{
+        width: 426px;
+        height: 240px;
+    }
     .favmovie:nth-child(4),
     .favmovie:nth-child(3) {
         display: none;
