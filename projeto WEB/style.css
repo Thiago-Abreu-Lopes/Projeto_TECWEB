@@ -345,7 +345,6 @@ option {
     padding: 10px;
     color: var(--amarelo-padrao);
     font-weight: 700;
-
 }
 
 .filmesFav {
@@ -378,8 +377,6 @@ option {
     border: 2px;
     border-style: solid;
     border-color: var(--amarelo-padrao);
-
-
 }
 
 .botaoFav {
@@ -387,7 +384,6 @@ option {
     width: 10%;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .botaoFav span {
@@ -401,7 +397,6 @@ option {
     border-color: var(--amarelo-padrao);
     color: var(--amarelo-padrao);
     font-weight: 700;
-
 }
 
 /*QUINTA PARTE*/
@@ -418,7 +413,6 @@ option {
     height: 20vh;
     justify-content: center;
     align-items: end;
-
 }
 
 .espaco_5 header h1 {
@@ -429,7 +423,6 @@ option {
     border-style: solid;
     background-color: var(--sec-black);
     border-color: var(--amarelo-padrao);
-
 }
 
 .discussao {
@@ -491,18 +484,17 @@ option {
 /*FIM PARTE THIAGO*/
 
 /* PARTE LUAN */
-/* Lançamentos */
+/* LANÇAMENTOS */
 .lancamento .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 50px 0px 50px;
 }
 
-.titulo-h1 {
-    margin-left: 50px;
-    color: var(--amarelo-padrao);
-    margin-bottom: 30px;
-    margin-top: 30px;
+.lancamento header {
+    display: flex;
+    height: 10vh;
+    margin: 10px 50px 0px 50px;
 }
 
 .lancamento .container h1 {
@@ -563,71 +555,69 @@ option {
     font: bold;
 }
 
-/* TERCEIRA PARTE LUCAS*/
-
-.titulo-ultimasAvaliacoes {
-    margin-left: 50px;
-    color: var(--amarelo-padrao);
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.conteudoUltimasAvaliacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 50px 0px 50px;
-    gap: 10px;
-}
-
-.avaliacao1,
-.avaliacao2,
-.avaliacao3 {
-    color: white;
-    background-color: var(--sec-black);
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.fotoUserIcon {
-    float: left;
-    clear: both;
-    margin-bottom: 100px;
-}
-
-.avaliadorNome {
-    font-weight: bold;
-    margin: 10px 0px 10px 0px;
-    color: var(--amarelo-padrao);
-}
-
-.avaliadorTexto {
-    margin: 5px 0px 5px 0px;
-}
-
-.imgEstrelasUltimasAvaliacoes {
-    margin: 5px 0px 5px 0px;
-    float: left;
-    height: 30px;
-
-}
-
-.linhaEstrela {
+/* PRIMEIRA PARTE */
+.espaco_1 header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
+    height: 10vh;
+    margin: 0px 50px 0px 50px;
 }
 
-.data {
+.espaco_1 footer {
+    display: flex;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0px 50px 10px 50px;
+}
+
+.botao-top10 {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.botao-top10 span {
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 10px;
+    font-size: large;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--amarelo-padrao);
     color: var(--amarelo-padrao);
-    font-size: 20px;
     font-weight: 700;
 }
 
+.conteudo-espaco_1{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: space-around;
+}
 
+.filme-top10{
+    cursor: pointer;
+    width: 20%;
+}
 
-/* Concluído  */
+.img-espaco_1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.numeros-top10{
+    display: flex;
+    justify-content: space-around;
+}
+
+#numeros-pers{
+    font-size: 60px;
+    color: var(--bg-color);
+    text-shadow: 1px 1px 3px #F5C518, -1px -1px 3px #F5C518, 1px -1px 3px #F5C518, -1px 1px 3px #F5C518;
+}
 
 /* QUARTA PARTE */
 .espaco_4 .container {
@@ -636,11 +626,18 @@ option {
     margin: 0px 50px 0px 50px;
 }
 
+.espaco_4 header {
+    display: flex;
+    height: 10vh;
+    margin: 40px 0px 0px 50px;
+}
+
 .img-espaco4 {
     width: 200px;
     height: 200px;
     margin: 5px;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .espaco_4 .container h1 {
@@ -654,7 +651,6 @@ option {
 
 .titleNOV h1 {
     padding: 10px;
-
     color: var(--amarelo-padrao);
     text-transform: uppercase;
     font-weight: 700;
@@ -692,6 +688,12 @@ option {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 130px;
+}
+
+.espaco_7 header {
+    display: flex;
+    height: 10vh;
+    margin: 40px 0px 0px 50px;
 }
 
 .espaco_7 p {
@@ -752,6 +754,68 @@ select:focus {
 }
 
 /* FIM PARTE LUAN */
+
+/* TERCEIRA PARTE LUCAS*/
+.titulo-ultimasAvaliacoes {
+    margin-left: 50px;
+    color: var(--amarelo-padrao);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.conteudoUltimasAvaliacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 50px 0px 50px;
+    gap: 10px;
+}
+
+.avaliacao1,
+.avaliacao2,
+.avaliacao3 {
+    color: white;
+    background-color: var(--sec-black);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fotoUserIcon {
+    float: left;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.avaliadorNome {
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    color: var(--amarelo-padrao);
+}
+
+.avaliadorTexto {
+    margin: 5px 0px 5px 0px;
+}
+
+.imgEstrelasUltimasAvaliacoes {
+    margin: 5px 0px 5px 0px;
+    float: left;
+    height: 30px;
+}
+
+.linhaEstrela {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data {
+    color: var(--amarelo-padrao);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Concluído  */
+
 @media (max-width:600px) {
     .menu {
         background-color: var(--bg-color);
