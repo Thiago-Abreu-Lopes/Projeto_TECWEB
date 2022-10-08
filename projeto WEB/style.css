@@ -933,7 +933,30 @@ select:focus {
         padding-top: 20px;
         
     }
-   
+    .espaco_4 .container .espaco4-prop{
+        display:grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+
+    }
+    .novidades{
+        grid-column-start: 1;
+        display:grid;
+        grid-template-columns:  1fr;
+    }
+    .novidades_3{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #espaco4-prop{
+        grid-row-start:3 ;
+    }
+    .nv_img1{
+
+        grid-row-start: 1;
+    }
+    .text_nov{
+    }
     #posic_bolas{
         padding-bottom: 20px;
         grid-row-start: 2;
