@@ -842,22 +842,41 @@ select:focus {
    
     .lancamento .container {
         display: grid;
-        grid-template-columns:  1fr;
-        margin: 0px 50px 0px 50px;
-    }
-    .video_lanc{
-    }
-    .descri_lan{
-        align-self: flex-end;
-    }
-    #posic_bolas{
-        grid-row-start: 2;
+        grid-template-columns:  repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr) ;
+        margin:0px 5px;
 
     }
-    .iframe_video{
-        width: 426px;
-        height: 240px;
+    .video_lan{
+        position:relative;
+        width: 500px;
+        height: 200px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
     }
+    .video_lan > iframe{
+        position: absolute;
+        top:5%;
+        width: 90%;
+    }
+    .descri_lan{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 20px;
+        
+    }
+   
+    #posic_bolas{
+        padding-bottom: 20px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+    }
+   
     .favmovie:nth-child(4),
     .favmovie:nth-child(3) {
         display: none;
