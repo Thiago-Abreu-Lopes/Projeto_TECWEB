@@ -920,6 +920,10 @@ select:focus {
     margin: 15px;
 }
 
+.pSugestoes2{
+    color: white;
+}
+
 .itemLista{
     color: white;
 }
