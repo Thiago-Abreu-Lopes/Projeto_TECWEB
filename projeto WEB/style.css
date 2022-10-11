@@ -927,6 +927,39 @@ select:focus {
 .estiloUL{
     list-style-type: none;
 }
+/* esp6 */
+
+
+.container6{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    /* justify-content: center; */
+    align-items: center;
+    width: 1000px;
+}
+
+.container6 div{
+    max-width: 250px;
+}
+
+.container6 img{
+    width: 100%;
+}
+
+.espaco6Horizontal div{
+    width: 400px;
+    align-self: center;
+    height: 120px;
+    background-color: yellow;
+    margin-top: 5px;
+}
+
+.espaco_6{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
 
 /* Concluído  */
 
